@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-13T10:44:57 IST" name="Suite" finished-at="2022-10-13T10:45:18 IST" duration-ms="21185">
+    <groups>
+      <group name="Chrome">
+        <method signature="ParallelTests.LaunchChrome()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" name="LaunchChrome" class="com.testparallel.ParallelTests"/>
+        <method signature="ParallelTests.TryFaceBook1()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" name="TryFaceBook1" class="com.testparallel.ParallelTests"/>
+      </group> <!-- Chrome -->
+      <group name="Firefox">
+        <method signature="ParallelTests.LaunchFirefox()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" name="LaunchFirefox" class="com.testparallel.ParallelTests"/>
+        <method signature="ParallelTests.TryFaceBook2()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" name="TryFaceBook2" class="com.testparallel.ParallelTests"/>
+      </group> <!-- Firefox -->
+    </groups>
+    <test started-at="2022-10-13T10:44:57 IST" name="Test" finished-at="2022-10-13T10:45:18 IST" duration-ms="21185">
+      <class name="com.testparallel.ParallelTests">
+        <test-method signature="LaunchChrome()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" started-at="2022-10-13T10:44:57 IST" name="LaunchChrome" finished-at="2022-10-13T10:45:03 IST" duration-ms="6022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchChrome -->
+        <test-method signature="LaunchFirefox()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" started-at="2022-10-13T10:45:03 IST" name="LaunchFirefox" finished-at="2022-10-13T10:45:12 IST" duration-ms="9335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchFirefox -->
+        <test-method signature="TryFaceBook1()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" started-at="2022-10-13T10:45:12 IST" name="TryFaceBook1" finished-at="2022-10-13T10:45:16 IST" depends-on-methods="com.testparallel.ParallelTests.LaunchChrome" duration-ms="3261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TryFaceBook1 -->
+        <test-method signature="TryFaceBook2()[pri:0, instance:com.testparallel.ParallelTests@2892dae4]" started-at="2022-10-13T10:45:16 IST" name="TryFaceBook2" finished-at="2022-10-13T10:45:18 IST" depends-on-methods="com.testparallel.ParallelTests.LaunchFirefox" duration-ms="2504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TryFaceBook2 -->
+      </class> <!-- com.testparallel.ParallelTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
